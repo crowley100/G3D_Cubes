@@ -1,13 +1,13 @@
 Application Log
-Start: Tue Jun 19 17:48:54 2018
+Start: Tue Jun 19 20:55:11 2018
 
 WARNING: AudioDevice is not enabled. Set G3DSpecification::audio = true before invoking initGLG3D() to enable audio.
-Initializing System::findDataFile took 0.003441s
+Initializing System::findDataFile took 0.001327s
 
 Entering GApp::GApp()
 cwd = C:\Users\lorca\Documents\G3D_Projects\CubesProject\data-files
 System::setAppDataDir("C:\Users\lorca\Documents\G3D_Projects\CubesProject\data-files")
-Initializing System::findDataFile took 0.001635s
+Initializing System::findDataFile took 0.000222s
 Setting video mode
 wglSwapIntervalEXT(1);
 Setting initial rendering state.
@@ -131,7 +131,7 @@ GPU Supports OpenGL 4.1 or later    yes - OpenGL version on this driver is 4.6
 Done initializing RenderDevice.
 Network StartupSystem = { 
     App { 
-        Name = "C:\\Users\\lorca\\Documents\\G3D_Projects\\CubesProject\\x64\\Debug\\cubes.exe"
+        Name = "C:\\Users\\lorca\\Documents\\G3D_Projects\\CubesProject\\x64\\Release\\cubes.exe"
         cwd = "C:\\Users\\lorca\\Documents\\G3D_Projects\\CubesProject\\data-files"
     } 
     
@@ -146,7 +146,7 @@ Network StartupSystem = {
     
     G3D { 
         Link version = 100100 
-        Compile version = "G3D Innovation Engine 10.01 (Debug)"
+        Compile version = "G3D Innovation Engine 10.01"
         G3DSpecification::deployMode = No 
         G3D10DATA = "c:\\g3d\\G3D10\\data-files;c:\\g3d\\data10\\common;c:\\g3d\\data10\\research;c:\\g3d\\data10\\game"
     } 
@@ -587,6 +587,7 @@ Done GApp::loadFont(...)
 Done GApp::GApp()
 
 Found scenes:
+  "White Cube" (./scene/whiteCube.Scene.Any)
   "Test Scene" (./test.Scene.Any)
   "G3D Debug Animation (Skeletal)" (c:\g3d\data10\common/scene/G3D_Debug_Animation_(Skeletal).Scene.Any)
   "G3D Debug Area Light (Glossy)" (c:\g3d\data10\common/scene/G3D_Debug_Area_Light_(Glossy).Scene.Any)
@@ -651,6 +652,8 @@ Found scenes:
 
 
 
+
+
 Vertex info
 -----------
 1(39) : warning C7050: "tex0" might be used before being initialized
@@ -658,7 +661,23 @@ Vertex info
 
 Vertex info
 -----------
+1(39) : warning C7050: "tex1" might be used before being initialized
+
+Vertex info
+-----------
+1(39) : warning C7050: "tex1" might be used before being initialized
+
+Vertex info
+-----------
 1(39) : warning C7050: "tex0" might be used before being initialized
+1(39) : warning C7050: "tex1" might be used before being initialized
+
+Vertex info
+-----------
+1(39) : warning C7050: "tex1" might be used before being initialized
+
+Vertex info
+-----------
 1(39) : warning C7050: "tex1" might be used before being initialized
 
 
@@ -668,9 +687,28 @@ Vertex info
 
 
 
+Fragment info
+-------------
+1(58) : warning C7050: "focusPlaneZ" might be used before being initialized
+1(59) : warning C7050: "scale" might be used before being initialized
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+Vertex info
+-----------
+1(39) : warning C7050: "tex0" might be used before being initialized
+1(39) : warning C7050: "tex1" might be used before being initialized
 
 
 
@@ -690,11 +728,18 @@ C:/Users/lorca/Documents/G3D_Projects
 C:/Users/lorca/Documents/G3D_Projects/CubesProject
 C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files
 C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/.
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/./scene
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/./scene/cubemap
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/./scene/cubemap/whiteroom
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/./scene/model
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/./scene/model/cube
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/./scene/whiteCube.Scene.Any
 C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/./test.Scene.Any
 C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/AmbientOcclusion
 C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/BumpMap
 C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/Camera
 C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/DefaultRenderer
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/DepthOfField
 C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/Film
 C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/GBuffer
 C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/GFont
@@ -708,8 +753,9 @@ C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/Texture
 C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/UniversalMaterial
 C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/UniversalSurface
 C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/cubemap
-C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/cubemap/cornellbox
-C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/g3d-license.txt
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/cubemap/noonclouds
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/cubemap/uffizi
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/cubemap/whiteroom
 C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/icon
 C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/icon.png
 C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/log.txt
@@ -720,9 +766,10 @@ C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/material/metalcrat
 C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/material/oldgirder
 C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/material/sand
 C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/model
-C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/model/CornellBox
-C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/model/CornellBox/CornellBox.zip
 C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/model/bedroom
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/model/crytek_sponza
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/model/crytek_sponza/sponza.zip
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/model/cube
 C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/model/gallery
 C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/model/holodeck
 C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/model/sportsCar
@@ -732,6 +779,50 @@ C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/model/viper
 C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/model/vr
 C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/rustymetal
 C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/AmbientOcclusion
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/BumpMap
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/Camera
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/DefaultRenderer
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/DepthOfField
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/Film
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/GBuffer
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/GFont
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/GaussianBlur
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/GuiTheme
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/Light
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/LightingEnvironment
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/SkyboxSurface
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/TemporalFilter
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/Texture
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/UniversalMaterial
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/UniversalSurface
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/cubemap
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/cubemap/noonclouds
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/cubemap/uffizi
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/cubemap/whiteroom
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/icon
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/material
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/material/blackrubber
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/material/chrome
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/material/metalcrate
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/material/oldgirder
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/material/sand
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/model
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/model/bedroom
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/model/crytek_sponza
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/model/crytek_sponza/sponza.zip
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/model/cube
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/model/gallery
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/model/holodeck
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/model/sportsCar
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/model/teapot
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/model/truckwheel
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/model/viper
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/model/vr
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/rustymetal
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/scene
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/shader
+C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/scene/shader/DefaultRenderer
 C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/shader
 C:/Users/lorca/Documents/G3D_Projects/CubesProject/data-files/shader/DefaultRenderer
 c:/g3d
@@ -741,6 +832,7 @@ c:/g3d/G3D10/data-files/AmbientOcclusion
 c:/g3d/G3D10/data-files/BumpMap
 c:/g3d/G3D10/data-files/Camera
 c:/g3d/G3D10/data-files/DefaultRenderer
+c:/g3d/G3D10/data-files/DepthOfField
 c:/g3d/G3D10/data-files/Film
 c:/g3d/G3D10/data-files/GBuffer
 c:/g3d/G3D10/data-files/GFont
@@ -754,12 +846,15 @@ c:/g3d/G3D10/data-files/Texture
 c:/g3d/G3D10/data-files/UniversalMaterial
 c:/g3d/G3D10/data-files/UniversalSurface
 c:/g3d/G3D10/data-files/cubemap
-c:/g3d/G3D10/data-files/cubemap/cornellbox
+c:/g3d/G3D10/data-files/cubemap/noonclouds
+c:/g3d/G3D10/data-files/cubemap/uffizi
+c:/g3d/G3D10/data-files/cubemap/whiteroom
 c:/g3d/G3D10/data-files/font
 c:/g3d/G3D10/data-files/font/AmbientOcclusion
 c:/g3d/G3D10/data-files/font/BumpMap
 c:/g3d/G3D10/data-files/font/Camera
 c:/g3d/G3D10/data-files/font/DefaultRenderer
+c:/g3d/G3D10/data-files/font/DepthOfField
 c:/g3d/G3D10/data-files/font/Film
 c:/g3d/G3D10/data-files/font/GBuffer
 c:/g3d/G3D10/data-files/font/GFont
@@ -775,7 +870,9 @@ c:/g3d/G3D10/data-files/font/UniversalSurface
 c:/g3d/G3D10/data-files/font/arial.fnt
 c:/g3d/G3D10/data-files/font/console-small.fnt
 c:/g3d/G3D10/data-files/font/cubemap
-c:/g3d/G3D10/data-files/font/cubemap/cornellbox
+c:/g3d/G3D10/data-files/font/cubemap/noonclouds
+c:/g3d/G3D10/data-files/font/cubemap/uffizi
+c:/g3d/G3D10/data-files/font/cubemap/whiteroom
 c:/g3d/G3D10/data-files/font/greek.fnt
 c:/g3d/G3D10/data-files/font/icon.fnt
 c:/g3d/G3D10/data-files/font/material
@@ -785,9 +882,10 @@ c:/g3d/G3D10/data-files/font/material/metalcrate
 c:/g3d/G3D10/data-files/font/material/oldgirder
 c:/g3d/G3D10/data-files/font/material/sand
 c:/g3d/G3D10/data-files/font/model
-c:/g3d/G3D10/data-files/font/model/CornellBox
-c:/g3d/G3D10/data-files/font/model/CornellBox/CornellBox.zip
 c:/g3d/G3D10/data-files/font/model/bedroom
+c:/g3d/G3D10/data-files/font/model/crytek_sponza
+c:/g3d/G3D10/data-files/font/model/crytek_sponza/sponza.zip
+c:/g3d/G3D10/data-files/font/model/cube
 c:/g3d/G3D10/data-files/font/model/gallery
 c:/g3d/G3D10/data-files/font/model/holodeck
 c:/g3d/G3D10/data-files/font/model/sportsCar
@@ -802,6 +900,7 @@ c:/g3d/G3D10/data-files/gui/AmbientOcclusion
 c:/g3d/G3D10/data-files/gui/BumpMap
 c:/g3d/G3D10/data-files/gui/Camera
 c:/g3d/G3D10/data-files/gui/DefaultRenderer
+c:/g3d/G3D10/data-files/gui/DepthOfField
 c:/g3d/G3D10/data-files/gui/Film
 c:/g3d/G3D10/data-files/gui/GBuffer
 c:/g3d/G3D10/data-files/gui/GFont
@@ -815,7 +914,9 @@ c:/g3d/G3D10/data-files/gui/Texture
 c:/g3d/G3D10/data-files/gui/UniversalMaterial
 c:/g3d/G3D10/data-files/gui/UniversalSurface
 c:/g3d/G3D10/data-files/gui/cubemap
-c:/g3d/G3D10/data-files/gui/cubemap/cornellbox
+c:/g3d/G3D10/data-files/gui/cubemap/noonclouds
+c:/g3d/G3D10/data-files/gui/cubemap/uffizi
+c:/g3d/G3D10/data-files/gui/cubemap/whiteroom
 c:/g3d/G3D10/data-files/gui/material
 c:/g3d/G3D10/data-files/gui/material/blackrubber
 c:/g3d/G3D10/data-files/gui/material/chrome
@@ -823,9 +924,10 @@ c:/g3d/G3D10/data-files/gui/material/metalcrate
 c:/g3d/G3D10/data-files/gui/material/oldgirder
 c:/g3d/G3D10/data-files/gui/material/sand
 c:/g3d/G3D10/data-files/gui/model
-c:/g3d/G3D10/data-files/gui/model/CornellBox
-c:/g3d/G3D10/data-files/gui/model/CornellBox/CornellBox.zip
 c:/g3d/G3D10/data-files/gui/model/bedroom
+c:/g3d/G3D10/data-files/gui/model/crytek_sponza
+c:/g3d/G3D10/data-files/gui/model/crytek_sponza/sponza.zip
+c:/g3d/G3D10/data-files/gui/model/cube
 c:/g3d/G3D10/data-files/gui/model/gallery
 c:/g3d/G3D10/data-files/gui/model/holodeck
 c:/g3d/G3D10/data-files/gui/model/sportsCar
@@ -838,7 +940,9 @@ c:/g3d/G3D10/data-files/gui/rustymetal
 c:/g3d/G3D10/data-files/gui/scene
 c:/g3d/G3D10/data-files/icon
 c:/g3d/G3D10/data-files/icon/cubemap
-c:/g3d/G3D10/data-files/icon/cubemap/cornellbox
+c:/g3d/G3D10/data-files/icon/cubemap/noonclouds
+c:/g3d/G3D10/data-files/icon/cubemap/uffizi
+c:/g3d/G3D10/data-files/icon/cubemap/whiteroom
 c:/g3d/G3D10/data-files/icon/material
 c:/g3d/G3D10/data-files/icon/material/blackrubber
 c:/g3d/G3D10/data-files/icon/material/chrome
@@ -846,9 +950,10 @@ c:/g3d/G3D10/data-files/icon/material/metalcrate
 c:/g3d/G3D10/data-files/icon/material/oldgirder
 c:/g3d/G3D10/data-files/icon/material/sand
 c:/g3d/G3D10/data-files/icon/model
-c:/g3d/G3D10/data-files/icon/model/CornellBox
-c:/g3d/G3D10/data-files/icon/model/CornellBox/CornellBox.zip
 c:/g3d/G3D10/data-files/icon/model/bedroom
+c:/g3d/G3D10/data-files/icon/model/crytek_sponza
+c:/g3d/G3D10/data-files/icon/model/crytek_sponza/sponza.zip
+c:/g3d/G3D10/data-files/icon/model/cube
 c:/g3d/G3D10/data-files/icon/model/gallery
 c:/g3d/G3D10/data-files/icon/model/holodeck
 c:/g3d/G3D10/data-files/icon/model/sportsCar
@@ -866,9 +971,10 @@ c:/g3d/G3D10/data-files/material/metalcrate
 c:/g3d/G3D10/data-files/material/oldgirder
 c:/g3d/G3D10/data-files/material/sand
 c:/g3d/G3D10/data-files/model
-c:/g3d/G3D10/data-files/model/CornellBox
-c:/g3d/G3D10/data-files/model/CornellBox/CornellBox.zip
 c:/g3d/G3D10/data-files/model/bedroom
+c:/g3d/G3D10/data-files/model/crytek_sponza
+c:/g3d/G3D10/data-files/model/crytek_sponza/sponza.zip
+c:/g3d/G3D10/data-files/model/cube
 c:/g3d/G3D10/data-files/model/gallery
 c:/g3d/G3D10/data-files/model/holodeck
 c:/g3d/G3D10/data-files/model/sportsCar
@@ -913,7 +1019,18 @@ c:/g3d/G3D10/data-files/shader/DefaultRenderer/DefaultRenderer_OIT_writePixel.gl
 c:/g3d/G3D10/data-files/shader/DefaultRenderer/DefaultRenderer_OIT_writePixel.glsl
 c:/g3d/G3D10/data-files/shader/DefaultRenderer/DefaultRenderer_deferredShade.pix
 c:/g3d/G3D10/data-files/shader/DefaultRenderer/DefaultRenderer_deferredShade.pix
+c:/g3d/G3D10/data-files/shader/DepthOfField
+c:/g3d/G3D10/data-files/shader/DepthOfField/DepthOfField.glsl
+c:/g3d/G3D10/data-files/shader/DepthOfField/DepthOfField.glsl
+c:/g3d/G3D10/data-files/shader/DepthOfField/DepthOfField_blur.pix
+c:/g3d/G3D10/data-files/shader/DepthOfField/DepthOfField_blur.pix
+c:/g3d/G3D10/data-files/shader/DepthOfField/DepthOfField_circleOfConfusion.pix
+c:/g3d/G3D10/data-files/shader/DepthOfField/DepthOfField_circleOfConfusion.pix
+c:/g3d/G3D10/data-files/shader/DepthOfField/DepthOfField_composite.pix
+c:/g3d/G3D10/data-files/shader/DepthOfField/DepthOfField_composite.pix
 c:/g3d/G3D10/data-files/shader/Film
+c:/g3d/G3D10/data-files/shader/Film/Film_FXAA_13_performance.pix
+c:/g3d/G3D10/data-files/shader/Film/Film_FXAA_13_performance.pix
 c:/g3d/G3D10/data-files/shader/Film/Film_FXAA_13_quality.pix
 c:/g3d/G3D10/data-files/shader/Film/Film_FXAA_13_quality.pix
 c:/g3d/G3D10/data-files/shader/Film/Film_bloomExpose.pix
@@ -986,7 +1103,9 @@ c:/g3d/G3D10/data-files/shader/UniversalSurface/UniversalSurface_vertexHelpers.g
 c:/g3d/G3D10/data-files/shader/compatibility.glsl
 c:/g3d/G3D10/data-files/shader/compatibility.glsl
 c:/g3d/G3D10/data-files/shader/cubemap
-c:/g3d/G3D10/data-files/shader/cubemap/cornellbox
+c:/g3d/G3D10/data-files/shader/cubemap/noonclouds
+c:/g3d/G3D10/data-files/shader/cubemap/uffizi
+c:/g3d/G3D10/data-files/shader/cubemap/whiteroom
 c:/g3d/G3D10/data-files/shader/default.vrt
 c:/g3d/G3D10/data-files/shader/default.vrt
 c:/g3d/G3D10/data-files/shader/deferredHelpers.glsl
@@ -1004,9 +1123,10 @@ c:/g3d/G3D10/data-files/shader/material/metalcrate
 c:/g3d/G3D10/data-files/shader/material/oldgirder
 c:/g3d/G3D10/data-files/shader/material/sand
 c:/g3d/G3D10/data-files/shader/model
-c:/g3d/G3D10/data-files/shader/model/CornellBox
-c:/g3d/G3D10/data-files/shader/model/CornellBox/CornellBox.zip
 c:/g3d/G3D10/data-files/shader/model/bedroom
+c:/g3d/G3D10/data-files/shader/model/crytek_sponza
+c:/g3d/G3D10/data-files/shader/model/crytek_sponza/sponza.zip
+c:/g3d/G3D10/data-files/shader/model/cube
 c:/g3d/G3D10/data-files/shader/model/gallery
 c:/g3d/G3D10/data-files/shader/model/holodeck
 c:/g3d/G3D10/data-files/shader/model/sportsCar
@@ -1029,20 +1149,34 @@ c:/g3d/G3D10/data-files/shader/unlit.vrt
 c:/g3d/data10
 c:/g3d/data10/common
 c:/g3d/data10/common/cubemap
-c:/g3d/data10/common/cubemap/cornellbox
-c:/g3d/data10/common/cubemap/cornellbox/empty-RG-NX.png
-c:/g3d/data10/common/cubemap/cornellbox/empty-RG-NY.png
-c:/g3d/data10/common/cubemap/cornellbox/empty-RG-NZ.png
-c:/g3d/data10/common/cubemap/cornellbox/empty-RG-PX.png
-c:/g3d/data10/common/cubemap/cornellbox/empty-RG-PY.png
-c:/g3d/data10/common/cubemap/cornellbox/empty-RG-PZ.png
 c:/g3d/data10/common/cubemap/model
 c:/g3d/data10/common/cubemap/model/bedroom
 c:/g3d/data10/common/cubemap/model/gallery
 c:/g3d/data10/common/cubemap/model/sportsCar
 c:/g3d/data10/common/cubemap/model/viper
+c:/g3d/data10/common/cubemap/noonclouds
+c:/g3d/data10/common/cubemap/noonclouds/noonclouds_bk.png
+c:/g3d/data10/common/cubemap/noonclouds/noonclouds_dn.png
+c:/g3d/data10/common/cubemap/noonclouds/noonclouds_ft.png
+c:/g3d/data10/common/cubemap/noonclouds/noonclouds_lf.png
+c:/g3d/data10/common/cubemap/noonclouds/noonclouds_rt.png
+c:/g3d/data10/common/cubemap/noonclouds/noonclouds_up.png
 c:/g3d/data10/common/cubemap/rustymetal
 c:/g3d/data10/common/cubemap/scene
+c:/g3d/data10/common/cubemap/uffizi
+c:/g3d/data10/common/cubemap/uffizi/uffizi+x.jpg
+c:/g3d/data10/common/cubemap/uffizi/uffizi+y.jpg
+c:/g3d/data10/common/cubemap/uffizi/uffizi+z.jpg
+c:/g3d/data10/common/cubemap/uffizi/uffizi-x.jpg
+c:/g3d/data10/common/cubemap/uffizi/uffizi-y.jpg
+c:/g3d/data10/common/cubemap/uffizi/uffizi-z.jpg
+c:/g3d/data10/common/cubemap/whiteroom
+c:/g3d/data10/common/cubemap/whiteroom/whiteroom-NX.png
+c:/g3d/data10/common/cubemap/whiteroom/whiteroom-NY.png
+c:/g3d/data10/common/cubemap/whiteroom/whiteroom-NZ.png
+c:/g3d/data10/common/cubemap/whiteroom/whiteroom-PX.png
+c:/g3d/data10/common/cubemap/whiteroom/whiteroom-PY.png
+c:/g3d/data10/common/cubemap/whiteroom/whiteroom-PZ.png
 c:/g3d/data10/common/font
 c:/g3d/data10/common/font/model
 c:/g3d/data10/common/font/model/bedroom
@@ -1093,11 +1227,53 @@ c:/g3d/data10/common/material/sand
 c:/g3d/data10/common/material/sand/sand.UniversalMaterial.Any
 c:/g3d/data10/common/material/scene
 c:/g3d/data10/common/model
-c:/g3d/data10/common/model/CornellBox
-c:/g3d/data10/common/model/CornellBox/CornellBox.zip
-c:/g3d/data10/common/model/CornellBox/CornellBox.zip/CornellBox-Original.mtl
-c:/g3d/data10/common/model/CornellBox/CornellBox.zip/CornellBox-Original.obj
 c:/g3d/data10/common/model/bedroom
+c:/g3d/data10/common/model/crytek_sponza
+c:/g3d/data10/common/model/crytek_sponza/sponza.zip
+c:/g3d/data10/common/model/crytek_sponza/sponza.zip/sponza.mtl
+c:/g3d/data10/common/model/crytek_sponza/sponza.zip/sponza.obj
+c:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/background.png
+c:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/background_bump.png
+c:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/chain_texture.png
+c:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/chain_texture_bump.png
+c:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/chain_texture_mask.png
+c:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/lion.png
+c:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/lion_bump.png
+c:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/spnza_bricks_a_bump.png
+c:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/spnza_bricks_a_diff.png
+c:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/spnza_bricks_a_spec.png
+c:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_arch_diff.png
+c:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_ceiling_a_diff.png
+c:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_column_a_bump.png
+c:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_column_a_diff.png
+c:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_column_b_bump.png
+c:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_column_b_diff.png
+c:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_column_c_bump.png
+c:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_column_c_diff.png
+c:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_curtain_blue_diff.png
+c:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_curtain_diff.png
+c:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_curtain_green_diff.png
+c:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_details_diff.png
+c:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_fabric_blue_diff.png
+c:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_fabric_diff.png
+c:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_fabric_green_diff.png
+c:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_flagpole_diff.png
+c:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_floor_a_diff.png
+c:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_roof_diff.png
+c:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_thorn_bump.png
+c:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_thorn_diff.png
+c:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_thorn_mask.png
+c:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/vase_bump.png
+c:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/vase_dif.png
+c:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/vase_hanging.png
+c:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/vase_plant.png
+c:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/vase_plant_mask.png
+c:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/vase_round.png
+c:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/vase_round_bump.png
+c:/g3d/data10/common/model/cube
+c:/g3d/data10/common/model/cube/cube.obj
+c:/g3d/data10/common/model/cube/default.mtl
+c:/g3d/data10/common/model/cube/default.png
 c:/g3d/data10/common/model/gallery
 c:/g3d/data10/common/model/holodeck
 c:/g3d/data10/common/model/holodeck/holodeck.ArticulatedModel.Any
@@ -1145,15 +1321,16 @@ c:/g3d/data10/common/scene/G3D_Sponza_(White).Scene.Any
 c:/g3d/data10/common/scene/G3D_Test_Models.Scene.Any
 c:/g3d/data10/common/scene/G3D_VR_Holodeck.Scene.Any
 c:/g3d/data10/common/scene/cubemap
-c:/g3d/data10/common/scene/cubemap/cornellbox
+c:/g3d/data10/common/scene/cubemap/noonclouds
+c:/g3d/data10/common/scene/cubemap/uffizi
 c:/g3d/data10/common/scene/material
 c:/g3d/data10/common/scene/material/metalcrate
 c:/g3d/data10/common/scene/material/oldgirder
 c:/g3d/data10/common/scene/material/sand
 c:/g3d/data10/common/scene/model
-c:/g3d/data10/common/scene/model/CornellBox
-c:/g3d/data10/common/scene/model/CornellBox/CornellBox.zip
 c:/g3d/data10/common/scene/model/bedroom
+c:/g3d/data10/common/scene/model/crytek_sponza
+c:/g3d/data10/common/scene/model/crytek_sponza/sponza.zip
 c:/g3d/data10/common/scene/model/gallery
 c:/g3d/data10/common/scene/model/holodeck
 c:/g3d/data10/common/scene/model/sportsCar
