@@ -98,6 +98,10 @@
     <ResourceCompile Include="resources.rc" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="data-files\scene\Scene1.Scene.Any" />
+    <None Include="data-files\scene\Scene2.Scene.Any" />
+    <None Include="data-files\scene\Scene3.Scene.Any" />
+    <None Include="data-files\scene\Scene4.Scene.Any" />
     <None Include="data-files\scene\whiteCube.Scene.Any" />
     <None Include="data-files\test.Scene.Any" />
     <None Include="Doxyfile" />

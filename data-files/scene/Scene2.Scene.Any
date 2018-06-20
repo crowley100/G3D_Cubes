@@ -1,0 +1,101 @@
+// -*- c++ -*-
+{
+    name = "Scene 2";
+
+    models = {
+        squishedCubeSand = ArticulatedModel::Specification {
+            filename = "model/cube/cube.obj";
+            preprocess = {
+                setMaterial(all(), Color3(0.761, 0.698, 0.502));
+                transformGeometry(all(), Matrix4::scale(0.02, 1.0, 1.0));
+            };
+        };
+
+        squishedCubeRed = ArticulatedModel::Specification {
+            filename = "model/cube/cube.obj";
+            preprocess = {
+                setMaterial(all(), Color3(1, 0, 0));
+                transformGeometry(all(), Matrix4::scale(0.02, 1.0, 1.0));
+            };
+        };
+
+        squishedCubeGreen = ArticulatedModel::Specification {
+            filename = "model/cube/cube.obj";
+            preprocess = {
+                setMaterial(all(), Color3(0, 1, 0));
+                transformGeometry(all(), Matrix4::scale(0.02, 1.0, 1.0));
+            };
+        };
+
+        cubeModel = ArticulatedModel::Specification {
+            filename = "model/cube/cube.obj";
+            preprocess = {
+                setMaterial(all(), Color3(0.761, 0.698, 0.502));
+            };
+        };
+    };
+
+    entities = {
+        skybox = Skybox {
+            texture = "cubemap/whiteroom/whiteroom-*.png";
+        };
+
+        lamp = Light{
+            attenuation = (0.0001, 0, 1);
+            bulbPower = Power3(60);
+            canChange = false;
+            castsShadows = false;
+            enabled = true;
+            extent = Vector2(0.25, 0.25); // size
+            frame = CFrame::fromXYZYPRDegrees(0.5, 0.478, 0, 0, -90, 0);
+            nearPlaneZLimit = -0.5;
+            producesDirectIllumination = true;
+            producesIndirectIllumination = true;
+            rectangular = true;
+            shadowMapBias = 0.01;
+            shadowMapSize = Vector2int16(8192, 8192);
+            shadowsEnabled = true;
+            spotHalfAngleDegrees = 85;
+            spotHardness = 0;
+            areaLightPullback = 0.1;
+            type = "AREA";
+
+            varianceShadowSettings = VSMSettings{
+                baseSize = Vector2int16(8192, 8192);
+                blurMultiplier = 15;
+                downsampleFactor = 4;
+                enabled = false;
+                filterRadius = 11;
+            };
+        };
+
+        leftWall = VisibleEntity {
+            model = "squishedCubeRed";
+            frame = CFrame::fromXYZYPRDegrees(0, 0, 0, 0, 0, 0);
+        };
+
+        rightWall = VisibleEntity {
+            model = "squishedCubeGreen";
+            frame = CFrame::fromXYZYPRDegrees(1, 0, 0, 0, 0, 0);
+        };
+
+        floor = VisibleEntity {
+            model = "squishedCubeSand";
+            frame = CFrame::fromXYZYPRDegrees(0.5, -0.5, 0, 0, 0, 90);
+        };
+
+        backWall = VisibleEntity {
+            model = "squishedCubeSand";
+            frame = CFrame::fromXYZYPRDegrees(0.5, 0, -0.5, 90, 0, 0);
+        };
+
+        ceiling = VisibleEntity {
+            model = "squishedCubeSand";
+            frame = CFrame::fromXYZYPRDegrees(0.5, 0.5, 0, 0, 0, 90);
+        };
+
+        camera = Camera {
+            frame = CFrame::fromXYZYPRDegrees(0, 0, 5);
+        };
+    };
+};
